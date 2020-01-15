@@ -10,7 +10,22 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Text("Hello, World!")
+        VStack {
+            Text("Hello, World!")
+                .font(.largeTitle)
+                .padding()
+                .foregroundColor(.white)
+                .frame(maxWidth: .infinity)
+                .background(Color.blue)
+            Text("Rectangular")
+                .font(.largeTitle)
+                .foregroundColor(.white)
+                .padding()
+                .background(RoundedRectangle(cornerRadius: 10))
+                .foregroundColor(.blue)
+                .padding()
+            Spacer()
+        }
     }
 }
 
